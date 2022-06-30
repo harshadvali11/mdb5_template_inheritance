@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   {% block title %}
+    <title>Mdb4 I am parent</title>
+   {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <h1>This is the Content of Parent Mdb4</h1>
+<h2>hello this is parent</h2>
+
+    <h3>this h3 of parent</h3>
+    {% block body_block %}
+
+    {% endblock %}
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+
+
+</body>
+</html>
